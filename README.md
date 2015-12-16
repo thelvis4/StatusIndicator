@@ -1,6 +1,6 @@
 # StatusIndicator
 
-StatusIndicator lets you display custom statuses in Xcode toolbar from a Xcode plugin.  
+StatusIndicator lets you display a custom status in Xcode's toolbar from a Xcode plugin.  
 This framework uses unofficial and undocumented APIs and might stop working with the new releases of Xcode.
 
 [ [Motivation](#motivation) &bull; [Integration](#integration)
@@ -10,13 +10,16 @@ What you can do with it is basically this:
 
 ![alt text](Assets/demo.gif "StatusIndicator Demo")
 
+You might want to use it along with [Troublemaker](https://github.com/thelvis4/Troublemaker), a framework that lets you add custom warnings and errors in Xcode.
+
+
 ## Motivation
-After developing [Troublemaker](https://github.com/thelvis4/Troublemaker) and using it for a while a problem was encountered.  
+A Xcode plugin allow us to access the structure of Xcode: windows, views and menus hierarchies. That means, if we are courageous enough, we can customize the Xcode. One of the most common customizations is adding a menu option that runs a custom defined task: Code quality checks, code standards, etc.  
 **What's the problem?**  
-When we need to run a tool that takes more that a couple of seconds(OCLint takes much more) to finish, we dispatch a task in the backround queue.  
+When we need to run a tool that takes more that a couple of seconds(OCLint takes much more) to finish, we might want to dispatch a task in the backround queue in order to prevent main thread blocking.  
 While the tool is working(and before showing warnings) there is no feedback at all. And that's very bad. The user doesn't feel in control, he doesn't know what happens, and even worse, he can run the same command multiple times.  
 **The Solution**  
-We though that a nice way to show the informations about running tool, the progress and the results would be to use Xcode's toolbar, especially the part showing the status of different activities(Build, Test, Cleaning...).  
+A nice way to show the informations about running tool, the progress and the results would be to use Xcode's toolbar, especially the part showing the status of different activities(Build, Test, Cleaning...).  
 Xcode doesn't provide any official way to use those elements, so I had to hack it again. :hammer: 
 
 ## Integration
@@ -86,7 +89,7 @@ status.progress = 0.5
 ```
 
 ##### Remove the status
-When the operation is done, remove the status. It's recomended to set the status as completed in order to remove the progress bar.
+When the operation is done, remove the status. It's recomended to set the status as completed before removing the status. This will make sure the progress indicator in Xcode's status view is properly dismissed.
 ```Swift
 status.completed = true
 indicator.removeStatus(status)
