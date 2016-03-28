@@ -10,34 +10,12 @@
 		A350C4871C202B0000A144C5 /* StatusIndicator_demo.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = A350C4861C202B0000A144C5 /* StatusIndicator_demo.xcscheme */; };
 		A350C4891C202B0000A144C5 /* StatusIndicator_demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A350C4881C202B0000A144C5 /* StatusIndicator_demo.swift */; };
 		A350C48B1C202B0000A144C5 /* NSObject_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A350C48A1C202B0000A144C5 /* NSObject_Extension.swift */; };
-		A350C4A01C202B1C00A144C5 /* StatusIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A350C4991C202B0B00A144C5 /* StatusIndicator.framework */; };
-		A350C4A31C202B2E00A144C5 /* StatusIndicator.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A350C4991C202B0B00A144C5 /* StatusIndicator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A35141DC1CA9647E00B163D8 /* StatusIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35141DA1CA9647E00B163D8 /* StatusIndicator.framework */; };
+		A35141DD1CA9647E00B163D8 /* XcodeIDEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35141DB1CA9647E00B163D8 /* XcodeIDEKit.framework */; };
+		A35141DE1CA965F700B163D8 /* StatusIndicator.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A35141DA1CA9647E00B163D8 /* StatusIndicator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A35141E01CA9668700B163D8 /* XcodeIDEKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A35141DB1CA9647E00B163D8 /* XcodeIDEKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A3C579AB1C21CD5100A79E01 /* TaskRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C579AA1C21CD5100A79E01 /* TaskRunner.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A350C4981C202B0B00A144C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A350C4921C202B0B00A144C5 /* StatusIndicator.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A350C44E1C2028DE00A144C5;
-			remoteInfo = StatusIndicator;
-		};
-		A350C49A1C202B0B00A144C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A350C4921C202B0B00A144C5 /* StatusIndicator.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A350C4581C2028DE00A144C5;
-			remoteInfo = StatusIndicatorTests;
-		};
-		A350C49D1C202B1200A144C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A350C4921C202B0B00A144C5 /* StatusIndicator.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A350C44D1C2028DE00A144C5;
-			remoteInfo = StatusIndicator;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A350C4A21C202B2800A144C5 /* CopyFiles */ = {
@@ -46,7 +24,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A350C4A31C202B2E00A144C5 /* StatusIndicator.framework in CopyFiles */,
+				A35141DE1CA965F700B163D8 /* StatusIndicator.framework in CopyFiles */,
+				A35141E01CA9668700B163D8 /* XcodeIDEKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +37,8 @@
 		A350C4881C202B0000A144C5 /* StatusIndicator_demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusIndicator_demo.swift; sourceTree = "<group>"; };
 		A350C48A1C202B0000A144C5 /* NSObject_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject_Extension.swift; sourceTree = "<group>"; };
 		A350C48C1C202B0000A144C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A350C4921C202B0B00A144C5 /* StatusIndicator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StatusIndicator.xcodeproj; path = ../../StatusIndicator.xcodeproj; sourceTree = "<group>"; };
+		A35141DA1CA9647E00B163D8 /* StatusIndicator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StatusIndicator.framework; path = Carthage/Build/Mac/StatusIndicator.framework; sourceTree = "<group>"; };
+		A35141DB1CA9647E00B163D8 /* XcodeIDEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeIDEKit.framework; path = Carthage/Build/Mac/XcodeIDEKit.framework; sourceTree = "<group>"; };
 		A3C579AA1C21CD5100A79E01 /* TaskRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRunner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,7 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A350C4A01C202B1C00A144C5 /* StatusIndicator.framework in Frameworks */,
+				A35141DD1CA9647E00B163D8 /* XcodeIDEKit.framework in Frameworks */,
+				A35141DC1CA9647E00B163D8 /* StatusIndicator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,8 +58,8 @@
 		A350C47A1C202B0000A144C5 = {
 			isa = PBXGroup;
 			children = (
-				A350C4921C202B0B00A144C5 /* StatusIndicator.xcodeproj */,
 				A350C4841C202B0000A144C5 /* StatusIndicator_demo */,
+				A35141D91CA9646700B163D8 /* Frameworks */,
 				A350C4831C202B0000A144C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,13 +92,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A350C4931C202B0B00A144C5 /* Products */ = {
+		A35141D91CA9646700B163D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A350C4991C202B0B00A144C5 /* StatusIndicator.framework */,
-				A350C49B1C202B0B00A144C5 /* StatusIndicatorTests.xctest */,
+				A35141DA1CA9647E00B163D8 /* StatusIndicator.framework */,
+				A35141DB1CA9647E00B163D8 /* XcodeIDEKit.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +116,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A350C49E1C202B1200A144C5 /* PBXTargetDependency */,
 			);
 			name = StatusIndicator_demo;
 			productName = StatusIndicator_demo;
@@ -167,35 +147,12 @@
 			mainGroup = A350C47A1C202B0000A144C5;
 			productRefGroup = A350C4831C202B0000A144C5 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A350C4931C202B0B00A144C5 /* Products */;
-					ProjectRef = A350C4921C202B0B00A144C5 /* StatusIndicator.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A350C4811C202B0000A144C5 /* StatusIndicator_demo */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		A350C4991C202B0B00A144C5 /* StatusIndicator.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = StatusIndicator.framework;
-			remoteRef = A350C4981C202B0B00A144C5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A350C49B1C202B0B00A144C5 /* StatusIndicatorTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = StatusIndicatorTests.xctest;
-			remoteRef = A350C49A1C202B0B00A144C5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A350C4801C202B0000A144C5 /* Resources */ = {
@@ -220,14 +177,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A350C49E1C202B1200A144C5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = StatusIndicator;
-			targetProxy = A350C49D1C202B1200A144C5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A350C48D1C202B0000A144C5 /* Debug */ = {
@@ -310,9 +259,13 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = StatusIndicator_demo/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
-				LD_RUNPATH_SEARCH_PATHS = "$(DT_TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = "$(DT_TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yopeso.StatusIndicator-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -327,9 +280,13 @@
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = StatusIndicator_demo/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
-				LD_RUNPATH_SEARCH_PATHS = "$(DT_TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = "$(DT_TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yopeso.StatusIndicator-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
